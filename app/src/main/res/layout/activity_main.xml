@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
   <com.google.android.material.tabs.TabLayout
-      id="@+id/tabLayout"
+      android:id="@+id/tabLayout"
       android:background="#075E53"
       app:tabIndicatorColor="@color/white"
       app:tabSelectedTextColor="@color/white"

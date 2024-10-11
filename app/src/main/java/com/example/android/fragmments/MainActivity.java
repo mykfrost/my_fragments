@@ -1,6 +1,7 @@
 package com.example.android.fragmments;
 
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,8 +9,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.tabs.TabLayout;
 
+public class MainActivity extends AppCompatActivity {
+ FrameLayout frameLayout ;
+ TabLayout tablayout ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        frameLayout = findViewById(R.id.framelayout);
+
+        tablayout = findViewById(R.id.tabLayout);
     }
 }
